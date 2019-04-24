@@ -16,7 +16,7 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
@@ -43,12 +43,11 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-/***Acordeon***/
 var acc = document.getElementsByClassName("acordeon");
-var i;
+var o;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (o = 0; i < acc.length; i++) {
+  acc[o].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
