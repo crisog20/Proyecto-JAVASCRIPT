@@ -15,25 +15,16 @@
         <button type="button" name="boton">Area cliente</button>
       </div>
     </header>
-    <nav>
-      <h1>Movimientos</h1>
-    </nav>
     <!-- Pestañas links -->
  <div class="tab">
   <a href="index.html" class="tablinks" >Inicio</a>
   <a href="cuentas.html" class="tablinks" >Cuentas Personales</a>
   <a href="presupuestos.html" class="tablinks" >Presupuestos</a>
-  <div class="busqueda">
-    <form class="example" action="/action_page.php" >
-      <input type="text" placeholder="Buscar.." name="buscar">
-      <button type="submit"><i class="fas fa-search"></i></button>
-    </form>
-  </div>
 </div>
 
 <div id="myDIV" class="header">
- <h2>Lista de gastos</h2>
- <input type="text" id="myInput" placeholder="Importe...">
+ <h1>Movimientos</h1>
+ <input type="text" id="miInput" placeholder="Importe...">
  <span onclick="newElement()" class="addBtn">Añadir</span>
 </div>
 
@@ -54,63 +45,7 @@
           <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
         </div>
   </footer>
-  <script src="script.js"></script>
-<script>
-// Crear un botón "cerrar" y agréguelo a cada elemento de la lista
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Haga clic en un botón de cierre para ocultar el elemento de la lista actual
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Agregar un símbolo "marcado" al hacer clic en un elemento de la lista
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-// Crear un nuevo elemento de la lista al hacer clic en el botón "Añadir"
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-</script>
+  <script  type="text/javascript" src="movimientos.js"></script>
+<script  type="text/javascript" src="script.js"></script>
   </body>
 </html>
