@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuentas Personales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"> Nombre </div>
+      <div class="acceso">
+        <i class='fas fa-user' style='font-size:24px'></i>
+        <button type="button" name="boton">Area cliente</button>
+      </div>
+    </header>
+    <nav>
+      <h1>Cuentas Personales</h1>
+    </nav>
+    <!-- Pestañas links -->
+ <div class="tab">
+  <a href="index.html" class="tablinks" >Inicio</a>
+  <a href="movimientos.html" class="tablinks" >Movimientos</a>
+  <a href="presupuestos.html" class="tablinks" >Presupuestos</a>
+  <div class="busqueda">
+    <form class="caja">
+      <input id="txtBusqueda" type="text" placeholder="Buscar..." name="buscar" onkeyup="Buscar();">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<!--<form>Busqueda: <input id="txtBusqueda" type="text" onkeyup="Buscar();" /></form>-->
+<article class="tabla">
+  <table id="tblPersonas">
+  <tbody>
+  <tr>
+  <th>Nombre cuenta</th>
+  <th>Entidad bancaria</th>
+  <th>Tipo de cuenta</th>
+  <th>Saldo actual</th>
+  </tr>
+  <tr>
+  <td>Cuenta principal</td>
+  <td>Caixabank</td>
+  <td>Cuenta corriente</td>
+  <td>2.000 €</td>
+  </tr>
+  <tr class="alt">
+  <td>Cuenta secundaria</td>
+  <td>EVO Banco</td>
+  <td>Cuenta nómina</td>
+  <td>800 €</td>
+  </tr>
+  <tr>
+  <td>Extra Creditos</td>
+  <td>Open Bank</td>
+  <td>Cuenta de valores</td>
+  <td>103.032 €</td>
+  </tr>
+  <tr class="alt">
+  <td>Negocio</td>
+  <td>Caixabank</td>
+  <td>Cuentas para negocios</td>
+  <td>3.456 €</td>
+  </tr>
+  </tbody>
+  </table>
+  <div id="mensaje"> </div>
+</article>
+
+<footer>
+        <div class="redes">
+          <a href="https://www.facebook.com/#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://plus.google.com/#" target="_blank"><i class="fab fa-google-plus"></i></a>
+          <a href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="cuentas.js"></script>
+
+  </body>
+</html>

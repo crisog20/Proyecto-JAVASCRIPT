@@ -4,10 +4,66 @@
     <meta charset="utf-8">
     <title>FINANZAS PERSONALES</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
   </head>
   <body>
-    <h1>FINANZAS PERSONALES</h1>
-    <p>IMAGENES</p>
-    <script type="text/javascript" src="script.js"></script>
+    <header>
+      <div class="logo"> Nombre </div>
+      <div class="acceso">
+        <i class='fas fa-user' style='font-size:24px'></i>
+        <button type="button" name="boton">Area cliente</button>
+      </div>
+    </header>
+    <nav>
+
+    </nav>
+    <!-- Pestañas links -->
+    <div class="tab">
+  <a href="cuentas.html" class="tablinks" >Cuentas Personales</a>
+  <a href="movimientos.html" class="tablinks" >Movimientos</a>
+  <a href="presupuestos.html" class="tablinks" >Presupuestos</a>
+</div>
+
+
+    <!-- Pestañas contenido -->
+
+    <section>
+      <!-- Slideshow imagenes -->
+      <div class="contenedor-slide">
+
+  <!-- Imagenes con textos -->
+  <div class="miSlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/img1.jpg" alt="imagen1" style="width:100%">
+    <div class="text">imagen 1</div>
+  </div>
+
+  <div class="miSlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/img2.jpeg" alt="imagen2" style="width:100%">
+    <div class="text">imagen 2</div>
+  </div>
+
+  <div class="miSlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/img3.jpg" alt="imagen3" style="width:100%">
+    <div class="text">imagen 3</div>
+  </div>
+
+  <!-- botones  -->
+  <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    </section>
+    <footer>
+            <div class="redes">
+              <a href="https://www.facebook.com/#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://plus.google.com/#" target="_blank"><i class="fab fa-google-plus"></i></a>
+              <a href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+      </footer>
+    <script src="script.js"></script>
   </body>
 </html>

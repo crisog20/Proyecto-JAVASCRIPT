@@ -1,0 +1,68 @@
+<html>
+<h2>CUENTAS</h2>
+<form>Busqueda: <input id="txtBusqueda" type="text" onkeyup="Buscar();" /></form>
+<table id="tblPersonas">
+<tbody>
+<tr>
+<th>Nombre cuenta</th>
+<th>Entidad bancaria</th>
+<th>Tipo de cuenta</th>
+<th>Saldo actual</th>
+</tr>
+<tr>
+<td>Cuenta principal</td>
+<td>Caixabank</td>
+<td>Cuenta corriente</td>
+<td>2.000 €</td>
+</tr>
+<tr class="alt">
+<td>Cuenta secundaria</td>
+<td>EVO Banco</td>
+<td>Cuenta nómina</td>
+<td>800 €</td>
+</tr>
+<tr>
+<td>Extra Creditos</td>
+<td>Open Bank</td>
+<td>Cuenta de valores</td>
+<td>103.032 €</td>
+</tr>
+<tr class="alt">
+<td>Negocio</td>
+<td>Caixabank</td>
+<td>Cuentas para negocios</td>
+<td>3.456 €</td>
+</tr>
+</tbody>
+</table>
+<div id="mensaje"> </div>
+<script type="text/javascript">// < ![CDATA[
+function Eliminar (i) {
+    document.getElementsByTagName("table")[0].setAttribute("id","tableid");
+    document.getElementById("tableid").deleteRow(i);
+}
+function Buscar() {
+            var tabla = document.getElementById('tblPersonas');
+            var busqueda = document.getElementById('txtBusqueda').value.toLowerCase();
+            var cellsOfRow="";
+            var found=false;
+            var compareWith="";
+            for (var i = 1; i < tabla.rows.length; i++) {
+                cellsOfRow = tabla.rows[i].getElementsByTagName('td');
+                found = false;
+                for (var j = 0; j < cellsOfRow.length && !found; j++) { compareWith = cellsOfRow[j].innerHTML.toLowerCase(); if (busqueda.length == 0 || (compareWith.indexOf(busqueda) > -1))
+                    {
+                        found = true;
+                    }
+                }
+                if(found)
+                {
+                    tabla.rows[i].style.display = '';
+					document.getElementById("mensaje").innerHTML = "";
+                } else {
+                    tabla.rows[i].style.display = 'none';
+					document.getElementById("mensaje").innerHTML = "No hay datos";
+                }
+            }
+        }
+// ]]></script>
