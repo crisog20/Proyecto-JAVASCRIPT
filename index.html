@@ -7,13 +7,53 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   </head>
-  <body>
+  <body onload="init();">
     <header>
       <div class="logo"> Nombre </div>
-      <div class="acceso">
-        <i class='fas fa-user' style='font-size:24px'></i>
-        <button type="button" name="boton">Area cliente</button>
-      </div>
+      <button id="myBtn"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
+      <!-- Dialogo modal-->
+      <div id="myModal" class="modal">
+  <!-- Contenido del modal -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div>
+
+    <table class="calculadora">
+    <tr>
+    	<td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+    	<td><button id="siete">7</button></td>
+    	<td><button id="ocho">8</button></td>
+    	<td><button id="nueve">9</button></td>
+    	<td><button id="reset">C</button></td>
+
+    </tr>
+    <tr>
+    	<td><button id="cuatro">4</button></td>
+    	<td><button id="cinco">5</button></td>
+    	<td><button id="seis">6</button></td>
+    	<td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+    	<td><button id="uno">1</button></td>
+    	<td><button id="dos">2</button></td>
+    	<td><button id="tres">3</button></td>
+    	<td><button id="division">/</button></td>
+    </tr>
+    <tr>
+    	<td><button id="cero">0</button></td>
+    	<td><button id="suma">+</button></td>
+    	<td><button id="resta">-</button></td>
+    	<td><button id="igual">=</button></td>
+    </tr>
+    </table>
+    </div>
+  </div>
+
+</div>
+
+
     </header>
 
     <!-- Pestañas links -->
@@ -61,5 +101,8 @@
             </div>
       </footer>
     <script src="script.js"></script>
+    <script src="modal.js"></script>
+    <script src="calculadora.js"></script>
+
   </body>
 </html>

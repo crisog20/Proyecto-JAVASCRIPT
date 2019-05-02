@@ -4,6 +4,10 @@ body{
   background-color: #e4fde1;
   margin: 0;
 }
+  h1{
+    text-align:center;
+    font-size: 50px;
+  }
 
 * {box-sizing:border-box}
 /*cabecera*/
@@ -13,6 +17,79 @@ header{overflow: auto;
   margin-left: 10px;
   float: left;
   font-size:2em}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /***Calculadora***/
+  .calculadora{
+  	display:block;
+  	margin:0 auto;
+  	padding:20px;
+  	background-color:#6b2737;
+  	width:350px;
+  	height:400px;
+  	border: 1px solid black;
+  }
+  .calculadora td button{
+  	display:block;
+  	width:40px;
+  	height: 40px;
+  	font-size: 15px;
+
+  }
+  #creditos{
+  	display:block;
+  	padding-top:20px;
+  	text-align: center;
+  	width:300px;
+  }
+  #resultado{
+  	display:block;
+  	text-align: center;
+  	font-size: 40px;
+  	margin-bottom: 50px;
+  	width:300px;
+  	height: 100px;
+  	line-height: 100px;
+  	background-color:#fff; /*Color de fondo*/
+  	border: 1px solid black
+  }
+
 
 /*Filtro de búsqueda*/
 .busqueda{
@@ -148,9 +225,7 @@ font-weight: bold;
   background-color: rgba(0,0,0,0.8);
 }
 
-/*Acordeon*/
-h1{
-  text-align:center;}
+/***Acordeon***/
 .acordeon {
   background-color: #456990;
   color: white;
@@ -177,7 +252,7 @@ h1{
   overflow: hidden; /*Estilo del panel hidden por defecto*/
 }
 
-li{
+li{ list-style-type: none;
 
 }
 .acordeon:after {
