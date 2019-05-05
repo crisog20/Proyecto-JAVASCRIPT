@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuentas Personales</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+  <body onload="init();">
+    <header>
+      <div class="logo"> C.E BANK </div>
+      <!-- Dialogo modal-->
+      <button id="BotonCalculadora"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
+      <!-- Dialogo modal-->
+      <div id="miModal" class="modal">
+  <!-- Contenido del modal -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div>
+    <table class="calculadora">
+    <tr>
+      <td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+      <td><button id="siete">7</button></td>
+      <td><button id="ocho">8</button></td>
+      <td><button id="nueve">9</button></td>
+      <td><button id="reset">C</button></td>
+
+    </tr>
+    <tr>
+      <td><button id="cuatro">4</button></td>
+      <td><button id="cinco">5</button></td>
+      <td><button id="seis">6</button></td>
+      <td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="uno">1</button></td>
+      <td><button id="dos">2</button></td>
+      <td><button id="tres">3</button></td>
+      <td><button id="division">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="cero">0</button></td>
+      <td><button id="suma">+</button></td>
+      <td><button id="resta">-</button></td>
+      <td><button id="igual">=</button></td>
+    </tr>
+    </table>
+    </div>
+  </div>
+
+  </div>
+
+
+    </header>
+
+    <!-- Pestañas links -->
+ <nav class="tab">
+  <a href="index.html" class="links" >Inicio</a>
+    <a href="presupuestos.html" class="links" >Presupuestos</a>
+  <a href="movimientos.html" class="links" >Movimientos</a>
+
+  <!--Filtro de búsqueda -->
+  <div class="busqueda">
+    <form class="caja">
+      <input id="txtBusqueda" type="text" placeholder="Buscar..." name="buscar" onkeyup="Buscar();">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+<article class="tabla">
+    <h1>Cuentas Personales</h1>
+  <table id="tblPersonas">
+  <tbody>
+  <tr>
+  <th>Nombre cuenta</th>
+  <th>Entidad bancaria</th>
+  <th>Tipo de cuenta</th>
+  <th>Saldo actual</th>
+  </tr>
+  <tr>
+  <td>Cuenta principal</td>
+  <td>Caixabank</td>
+  <td>Cuenta corriente</td>
+  <td>2.000 €</td>
+  </tr>
+  <tr class="alt">
+  <td>Cuenta secundaria</td>
+  <td>EVO Banco</td>
+  <td>Cuenta nómina</td>
+  <td>800 €</td>
+  </tr>
+  <tr>
+  <td>Extra Creditos</td>
+  <td>Open Bank</td>
+  <td>Cuenta de valores</td>
+  <td>103.032 €</td>
+  </tr>
+  <tr class="alt">
+  <td>Negocio</td>
+  <td>Caixabank</td>
+  <td>Cuentas para negocios</td>
+  <td>3.456 €</td>
+  </tr>
+  <tr>
+  <td>Otra cuenta</td>
+  <td>Banco Sabadell</td>
+  <td>Cuenta corriente</td>
+  <td>5.900 €</td>
+  </tr>
+  <tr>
+  <td>Extranjero</td>
+  <td>JP Morgan Chase Bank</td>
+  <td>Cuenta corriente</td>
+  <td>45.200 €</td>
+  </tr>
+  </tbody>
+  </table>
+</article>
+
+<footer>
+        <div class="redes">
+          <a href="https://www.facebook.com/#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://plus.google.com/#" target="_blank"><i class="fab fa-google-plus"></i></a>
+          <a href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://github.com/crisog20/Proyecto-JAVASCRIPT" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+  </footer>
+  <script src="../js/cuentas.js"></script>
+  <script src="../js/calculadora.js"></script>
+  <script src="../js/modal.js"></script>
+
+  </body>
+</html>

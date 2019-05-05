@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Movimientos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
   </head>
   <body onload="init();">
     <header>
-      <div class="logo"> Nombre </div>
-      <button id="myBtn"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
+      <div class="logo"> C.E BANK </div>
+      <button id="BotonCalculadora"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
       <!-- Dialogo modal-->
-      <div id="myModal" class="modal">
+      <div id="miModal" class="modal">
   <!-- Contenido del modal -->
-  <div class="modal-content">
+  <div class="modal-contenido">
     <span class="close">&times;</span>
     <div>
 
@@ -58,12 +58,12 @@
 
     <!-- Pestañas links -->
  <div class="tab">
-  <a href="index.html" class="tablinks" >Inicio</a>
-  <a href="cuentas.html" class="tablinks" >Cuentas Personales</a>
-  <a href="presupuestos.html" class="tablinks" >Presupuestos</a>
+  <a href="index.html" class="links" >Inicio</a>
+  <a href="cuentas.html" class="links" >Cuentas Personales</a>
+  <a href="presupuestos.html" class="links">Presupuestos</a>
 </div>
 
-<div id="myDIV" class="header">
+<div id="miDIV" class="header">
  <h1>Movimientos</h1>
  <input type="text" id="miInput" placeholder="Importe...">
  <span onclick="newElement()" class="addBtn">Añadir</span>
@@ -86,9 +86,9 @@
           <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
         </div>
   </footer>
-  <script  type="text/javascript" src="movimientos.js"></script>
-<script  type="text/javascript" src="script.js"></script>
-  <script src="calculadora.js"></script>
-<script src="modal.js"></script>
+  <script  type="text/javascript" src="../js/movimientos.js"></script>
+<script  type="text/javascript" src="../js/index.js"></script>
+  <script src="../js/calculadora.js"></script>
+<script src="../js/modal.js"></script>
   </body>
 </html>

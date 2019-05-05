@@ -1,16 +1,19 @@
-/*estilos generales*/
-body{
+/***Estilos generales***/
+* {box-sizing:border-box;
   font-family: verdana, sans-serif;
-  background-color: #e4fde1;
   margin: 0;
 }
-  h1{
+
+body {
+  background-color: #e4fde1
+}
+
+  h1 {margin: 20px;
     text-align:center;
     font-size: 50px;
   }
 
-* {box-sizing:border-box}
-/*cabecera*/
+/***cabecera***/
 header{overflow: auto;
   background-color: #114b5f}
 .logo{
@@ -18,44 +21,51 @@ header{overflow: auto;
   float: left;
   font-size:2em}
 
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+  /***Modal***/
 
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+/* Modal Content */
+.modal-contenido {
+  background-color: #456990;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   /***Calculadora***/
+#BotonCalculadora{float: right;
+  margin-top: 10px;
+  margin-right: 20px}
+
   .calculadora{
   	display:block;
   	margin:0 auto;
@@ -65,20 +75,22 @@ header{overflow: auto;
   	height:400px;
   	border: 1px solid black;
   }
-  .calculadora td button{
+
+  .calculadora td button {
   	display:block;
   	width:40px;
   	height: 40px;
   	font-size: 15px;
-
   }
-  #creditos{
+
+  #creditos {
   	display:block;
   	padding-top:20px;
   	text-align: center;
   	width:300px;
   }
-  #resultado{
+
+  #resultado {
   	display:block;
   	text-align: center;
   	font-size: 40px;
@@ -90,49 +102,23 @@ header{overflow: auto;
   	border: 1px solid black
   }
 
-
 /*Filtro de búsqueda*/
 .busqueda{
   float: right;
   margin-right: 10px;
   margin-top: 2px;
 }
+
 .acceso{
   float: right;
-  margin-right: 10px;}
+  margin-right: 10px;
+}
 
 .acceso button{
   border-radius: 10px;
   border: none;
-  padding:5px;}
-
-  /* Estilo del campo de búsqueda */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #ffffff;
-  }
-
-/* Estilo del botón de envío */
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevenir los bordes dobles*/
-    cursor: pointer;
-  }
-
-  form.example button:hover {
-    background: #0b7dda;
-  }
-
+  padding:5px;
+}
 
 
   /*** Estilo de pestañas ***/
@@ -140,14 +126,10 @@ header{overflow: auto;
     overflow: hidden;
     border: 1px solid #456990;
     background-color: #f1f1f1;
-
-
-  }
+    }
 
   /* Estilo de los botones que se utilizan para abrir el contenido de la pestaña*/
-  .tab a
-   {
-
+  .tab a {
     background-color: inherit;
     float: left;
     border: none;
@@ -157,7 +139,7 @@ header{overflow: auto;
     transition: 0.3s;
     text-decoration: none;
     margin: 0 auto;
-  }
+    }
 
   /* Cambiar el color de fondo de los botones al pasar el ratón.*/
   .tab a:hover {
@@ -177,7 +159,7 @@ header{overflow: auto;
   margin: auto;
 }
 
-.mySlides {
+.miSlides {
   display: none;
 }
 
@@ -193,7 +175,7 @@ font-family: cursive;
 font-size: 30px;
 margin-bottom: 10px
 }
-.numbertext{
+.numero{
   color: #114b5f;
 font-weight: bold;
 }
@@ -268,7 +250,7 @@ li{ list-style-type: none;
 
 
 
-/*To do list*/
+/***To do list***/
 /* Eliminar márgenes y relleno de la lista. */
 #miUL {
   margin: 0;
@@ -372,6 +354,33 @@ input {
   background-color: #bbb;
 }
 
+
+/***filtro de búsqueda***/
+#tblPersonas {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#tblPersonas th {
+  text-align: left;
+  padding: 12px;
+  background-color: #456990;
+}
+
+#tblPersonas td {
+  text-align: left;
+  padding: 12px;
+}
+
+#tblPersonas tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#tblPersonas tr.header, #tblPersonas tr:hover {
+  background-color: #114B5F;
+}
 /*footer*/
 footer{
   border-radius: 15px;

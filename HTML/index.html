@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>FINANZAS PERSONALES</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   </head>
   <body onload="init();">
     <header>
-      <div class="logo"> Nombre </div>
-      <button id="myBtn"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
+      <div class="logo">C.E BANK </div>
+      <button id="BotonCalculadora"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
       <!-- Dialogo modal-->
-      <div id="myModal" class="modal">
+      <div id="miModal" class="modal">
   <!-- Contenido del modal -->
-  <div class="modal-content">
+  <div class="modal-contenido">
     <span class="close">&times;</span>
     <div>
-
     <table class="calculadora">
     <tr>
     	<td colspan="4"><span id="resultado"></span></td>
@@ -52,38 +51,35 @@
   </div>
 
 </div>
-
-
     </header>
 
     <!-- Pestañas links -->
     <nav class="tab">
-  <a href="cuentas.html" class="tablinks" >Cuentas Personales</a>
-  <a href="movimientos.html" class="tablinks" >Movimientos</a>
-  <a href="presupuestos.html" class="tablinks" >Presupuestos</a>
+  <a href="cuentas.html" class="links" >Cuentas Personales</a>
+  <a href="movimientos.html" class="links" >Movimientos</a>
+  <a href="presupuestos.html" class="links" >Presupuestos</a>
 </nav>
-    <!-- Pestañas contenido -->
 
     <section>
       <!-- Slideshow imagenes -->
       <div class="contenedor-slide">
 
   <!-- Imagenes con textos -->
-  <div class="miSlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/credito.jpg" alt="imagen1" >
+  <div class="miSlides">
+    <div class="numero">1 / 3</div>
+    <img src="../img/credito.jpg" alt="imagen1" >
     <div class="text">Revise sus movimentos</div>
   </div>
 
-  <div class="miSlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/dinero.jpg" alt="imagen2" >
+  <div class="miSlides">
+    <div class="numero">2 / 3</div>
+    <img src="../img/dinero.jpg" alt="imagen2" >
     <div class="text">Tenga a la vista sus presupuestos</div>
   </div>
 
-  <div class="miSlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/euro.jpg" alt="imagen3" >
+  <div class="miSlides">
+    <div class="numero">3 / 3</div>
+    <img src="../img/euro.jpg" alt="imagen3" >
     <div class="text">Controle sus gastos</div>
   </div>
 
@@ -100,9 +96,8 @@
               <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
             </div>
       </footer>
-    <script src="script.js"></script>
-    <script src="modal.js"></script>
-    <script src="calculadora.js"></script>
-
+    <script src="../js/index.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/calculadora.js"></script>
   </body>
 </html>

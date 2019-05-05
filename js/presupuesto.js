@@ -3,11 +3,11 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+    /* Cambiando, haciendo click entre clase activa y no, de manera que
+    se pueda controlar el boton para abrir y cerrar el panel */
+    this.classList.toggle("activo");
 
-    /* Toggle between hiding and showing the active panel */
+    /* Cambiar entre esconder y mostrar los paneles del acordeon */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";

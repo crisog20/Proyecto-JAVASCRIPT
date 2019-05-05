@@ -1,3 +1,4 @@
+//slides
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -22,6 +23,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+//pestañas
 function openCity(evt, cityName) {
   // Declarar las variables
   var i, tabcontent, tablinks;
@@ -33,7 +36,7 @@ function openCity(evt, cityName) {
   }
 
   // Obtener todos los elementos con class = "tablinks" y eliminar la clase "active"
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("links");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
