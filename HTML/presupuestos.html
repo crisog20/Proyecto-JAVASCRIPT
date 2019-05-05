@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+  <body onload="init();">
+    <header>
+      <div class="logo">C.E BANK </div>
+      <button id="BotonCalculadora"><i class="fa fa-calculator">&nbsp;</i>Calculadora</button>
+      <!-- Dialogo modal-->
+      <div id="miModal" class="modal">
+  <!-- Contenido del modal -->
+  <div class="modal-contenido">
+    <span class="close">&times;</span>
+    <div>
+
+    <table class="calculadora">
+    <tr>
+      <td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+      <td><button id="siete">7</button></td>
+      <td><button id="ocho">8</button></td>
+      <td><button id="nueve">9</button></td>
+      <td><button id="reset">C</button></td>
+
+    </tr>
+    <tr>
+      <td><button id="cuatro">4</button></td>
+      <td><button id="cinco">5</button></td>
+      <td><button id="seis">6</button></td>
+      <td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="uno">1</button></td>
+      <td><button id="dos">2</button></td>
+      <td><button id="tres">3</button></td>
+      <td><button id="division">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="cero">0</button></td>
+      <td><button id="suma">+</button></td>
+      <td><button id="resta">-</button></td>
+      <td><button id="igual">=</button></td>
+    </tr>
+    </table>
+    </div>
+  </div>
+
+  </div>
+
+
+    </header>
+
+    <!-- Pestañas links -->
+
+ <nav class="tab">
+  <a href="index.html" class="links" >Inicio</a>
+  <a href="cuentas.html" class="links" >Cuentas Personales</a>
+  <a href="movimientos.html" class="links" >Movimientos</a>
+</nav>
+
+<article>
+  <h1>Presupuesto</h1>
+<button class="acordeon">Anual</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-credit-card">&nbsp;</i><strong>Total</strong> 13000€</li>
+  </ul>
+</div>
+
+<!-- Acordeon -->
+<button class="acordeon">Mensual</button>
+<div class="panel">
+<button class="acordeon">Enero</button>
+<div class="panel">
+
+    <ul>
+      <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+      <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+      <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+    </ul>
+</div>
+<button class="acordeon">Febrero</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Marzo</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div>
+<button class="acordeon">Abril</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Mayo</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Junio</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Julio</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Agosto</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+      <li><i class="fas fa-map">&nbsp;</i><strong>VACACIONES</strong> 1000€</li>
+  </ul>
+</div><button class="acordeon">Septiembre</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Octubre</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+  </ul>
+</div><button class="acordeon">Noviembre</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+
+  </ul>
+</div>
+<button class="acordeon">Diciembre</button>
+<div class="panel">
+  <ul>
+    <li><i class="fa fa-home">&nbsp;</i><strong>HOGAR</strong> 600€</li>
+    <li><i class="fas fa-car">&nbsp;</i><strong>COCHE</strong> 300€</li>
+    <li><i class="fas fa-paw">&nbsp;</i><strong>MASCOTAS</strong> 50€</li>
+      <li><i class="fas fa-map">&nbsp;</i><strong>VACACIONES</strong> 1000€</li>
+  </ul>
+</div>
+</div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+          <div class="redes">
+            <a href="https://www.facebook.com/#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://plus.google.com/#" target="_blank"><i class="fab fa-google-plus"></i></a>
+            <a href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/#" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+    </footer>
+
+<script src="../js/pestanasyslide.js"></script>
+<script src="../js/acordeon.js"></script>
+<script src="../js/modal.js"></script>
+  <script src="../js/calculadora.js"></script>
+  </body>
+</html>

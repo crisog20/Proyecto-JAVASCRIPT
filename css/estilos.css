@@ -1,0 +1,436 @@
+/***Estilos generales***/
+* {box-sizing:border-box;
+  font-family: verdana, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #e4fde1
+}
+
+  h1 {margin: 20px;
+    text-align:center;
+    font-size: 50px;
+  }
+
+/***cabecera***/
+header{overflow: auto;
+  background-color: #114b5f}
+.logo{
+  margin-left: 10px;
+  float: left;
+  font-size:2em}
+
+  /***Modal***/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contenido {
+  background-color: #456990;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Boton de cerrado */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  /***Calculadora***/
+#BotonCalculadora{float: right;
+  margin-top: 10px;
+  margin-right: 20px}
+
+  .calculadora{
+  	display:block;
+  	margin:0 auto;
+  	padding:20px;
+  	background-color:#6b2737;
+  	width:350px;
+  	height:400px;
+  	border: 1px solid black;
+  }
+
+  .calculadora td button {
+  	display:block;
+  	width:40px;
+  	height: 40px;
+  	font-size: 15px;
+  }
+
+  #creditos {
+  	display:block;
+  	padding-top:20px;
+  	text-align: center;
+  	width:300px;
+  }
+
+  #resultado {
+  	display:block;
+  	text-align: center;
+  	font-size: 40px;
+  	margin-bottom: 50px;
+  	width:300px;
+  	height: 100px;
+  	line-height: 100px;
+  	background-color:#fff;
+  	border: 1px solid black
+  }
+
+/***Filtro de búsqueda***/
+.busqueda{
+
+  float: right;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.acceso{
+  float: right;
+  margin-right: 10px;
+}
+
+.acceso button{
+
+  border-radius: 10px;
+  border: none;
+  padding:5px;
+}
+/* Estilo del campo de búsqueda */
+form.caja input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+/* Estilo del botón de envío */
+form.caja button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevenir los bordes dobles*/
+  cursor: pointer;
+}
+
+form.caja button:hover {
+  background: #0b7dda;
+}
+
+
+  /*** Estilo de pestañas ***/
+  .tab {
+    overflow: hidden;
+    border: 1px solid #456990;
+    background-color: #f1f1f1;
+    }
+
+  /* Estilo de los botones que se utilizan para abrir el contenido de la pestaña*/
+  .tab a {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 0 auto;
+    }
+
+  /* Cambiar el color de fondo de los botones al pasar el ratón.*/
+  .tab a:hover {
+    background-color: #456990;
+  }
+
+  /* Crear una clase activa / actual*/
+  .tab a.active {
+    background-color: #ccc;
+  }
+
+
+/***slide imagenes***/
+.contenedor-slide {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.miSlides {
+  display: none;
+}
+
+/*Cambiamos el tamaño de las imágenes para que se adecue al tamaño de la página*/
+img{
+  width: 100%;
+  height: 500px
+}
+
+.text{
+  text-align: center;
+font-family: cursive;
+font-size: 30px;
+margin-bottom: 10px
+}
+.numero{
+  color: #114b5f;
+font-weight: bold;
+}
+
+/* botones anterior y siguiente*/
+.anterior, .siguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #114b5f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Coloque el botón "siguiente" a la derecha */
+.siguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Al pasar por encima, añadir un color de fondo negro con un poco ver a través */
+.anterior:hover, .siguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/***Acordeon***/
+.acordeon {
+  background-color: #456990;
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align:center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Añade un color de fondo al boton cuando se clickea en el o cuando se pasa el ratón sobre él (hover) */
+.active, .acordeon:hover {
+  background-color: #114b5f;
+}
+
+.panel {
+  text-align:center;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden; /*Estilo del panel hidden por defecto*/
+}
+
+li{ list-style-type: none;
+
+}
+.acordeon:after {
+  content: '\02795'; /* Carácter Unicode del signo "más" (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Carácter Unicode del signo "menos" (-) */
+}
+
+
+
+/***To do list***/
+/* Eliminar márgenes y relleno de la lista. */
+#miUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de los elementos de la lista */
+#miUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* hacer que los elementos de la lista no sean seleccionables */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*Establecer todos los elementos de la lista impar a un color diferente (rayas de cebra) */
+#miUL li:nth-child(odd) {
+  background: #456990;
+}
+
+#miUL li:nth-child(even) {
+  background: white;
+}
+
+/* Color de fondo más oscuro en el hover */
+#miUL li:hover {
+  background: #6b2737;
+}
+
+/*   Cuando haga clic en, agregue un color de fondo y elimine el texto */
+#miUL li.checked {
+  background: #6b2737;
+  color: grey;
+  text-decoration: line-through;
+}
+
+/* Añadir una marca "marcada" cuando se hace clic  */
+#miUL li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Estilo del botón de cierre */
+.close {
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Borrar flotantes después de la cabecera */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo del input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Estilo del botón "Añadir" */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #456990;
+  color: black;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #6b2737;
+}
+
+
+/***filtro de búsqueda***/
+#tblPersonas {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#tblPersonas th {
+  text-align: left;
+  padding: 12px;
+  background-color: #456990;
+}
+
+#tblPersonas td {
+  text-align: left;
+  padding: 12px;
+}
+
+#tblPersonas tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#tblPersonas tr.header, #tblPersonas tr:hover {
+  background-color: #114B5F;
+}
+/*footer*/
+footer{
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+  height: auto;
+  position: sticky; /*Posición fija en la parte de abajo de la página de forma permanente*/
+ left: 0;
+ bottom: 0;
+ width: 100%;
+   height: 40px;
+   background-color: #6b2737;
+   color: white;
+   text-align: center;
+  }
+  .redes{
+    display: inline-block;
+    font-size: 30px;
+    color: #f45b69;
+  }
